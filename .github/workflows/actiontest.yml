@@ -9,11 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Hello world action step
+      - name: Hello world
         id: hello
         uses: casperklein/actiontest@master
         with:
-          greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
+          name: 'space'
+
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
