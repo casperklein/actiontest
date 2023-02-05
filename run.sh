@@ -2,19 +2,19 @@
 
 set -ueo pipefail
 
-#echo ${INPUT_WHO-TO-GREET}
-#exit
 echo "Name: $INPUT_NAME"
-echo '$1: '"$1"
 
 echo "PWD: $(pwd)"
 echo "WORKSPACE: $GITHUB_WORKSPACE"
-echo "ENV:"
-printenv
 
 echo
-echo "Hello $1"
-time=$(date)
+echo "ENV:"
+printenv
+echo
+echo
 
-# for usage in next further steps
+time=$(date)
+echo "Hello $INPUT_NAME @ $time"
+
+# for usage in further steps
 echo "time=$time" >> $GITHUB_OUTPUT
