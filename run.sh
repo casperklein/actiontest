@@ -2,7 +2,8 @@
 
 set -ueo pipefail
 
-echo "Name: $INPUT_NAME"
+echo "Name via ENV: $INPUT_NAME" # see action.yml
+echo "Name via argument: $1"     # see action.yml
 
 echo "PWD: $(pwd)"
 echo "WORKSPACE: $GITHUB_WORKSPACE"
