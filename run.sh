@@ -4,7 +4,7 @@ set -ueo pipefail
 
 #echo ${INPUT_WHO-TO-GREET}
 #exit
-echo "Name: $NAME"
+echo "Name: $INPUT_NAME"
 echo '$1: '"$1"
 
 echo "PWD: $(pwd)"
