@@ -15,9 +15,8 @@ jobs:
         with:
           name: 'foobar'
 
-      - name: Get the output time
+      - name: Get the greet time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
 
       - name: Hello world (use default name 'world')
-        id: hello-default
         uses: casperklein/actiontest@master
