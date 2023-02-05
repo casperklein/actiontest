@@ -14,9 +14,7 @@ echo
 
 time=$(date)
 echo "Hello $INPUT_NAME @ $time"
+echo
 
 # for usage in further steps
 echo "time=$time" >> "$GITHUB_OUTPUT"
-echo
-echo "debug:"
-cat "$GITHUB_OUTPUT"
