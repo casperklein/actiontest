@@ -17,4 +17,4 @@ echo "Hello $1"
 time=$(date)
 
 # for usage in next further steps
-echo "::set-output name=time::$time"
+echo "time=$time" >> $GITHUB_OUTPUT
