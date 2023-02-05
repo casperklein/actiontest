@@ -17,3 +17,7 @@ jobs:
 
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+
+      - name: Hello world (use default name)
+        id: hello-default
+        uses: casperklein/actiontest@master
